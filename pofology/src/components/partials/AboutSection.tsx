@@ -17,7 +17,8 @@ const AboutSection = () => {
             Hi, I am Arushi Jain, I am a fullstack developer. I work remotely from Mumbai, India. I have rich
             experience in building, designing & customizing website, web apps etc.
           </p>
-          <Button className="mt-5">Download CV</Button>
+          <Button className="mt-5">
+            <Link href="https://drive.google.com/file/d/1a6YTn7Vvz0o2AmhboAij0ZPv8zQbPg1N/view" legacyBehavior><a target="_blank">Download CV</a></Link></Button>
         </div>
 
         {/* Skills */}
