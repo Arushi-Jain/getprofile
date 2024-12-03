@@ -39,7 +39,7 @@ const ServiceSection = () => {
       </div>
       <p className="mt-8 text-center">
         Looking for a custom service?{' '}
-        <Link href="/contact">
+        <Link legacyBehavior href="/contact">
           <a>Click here to contact me! &#128079;</a>
         </Link>
       </p>

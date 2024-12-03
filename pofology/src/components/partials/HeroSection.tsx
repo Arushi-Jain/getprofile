@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
+import { FiLinkedin, FiFacebook, FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
 import Button from '@/components/form/Button';
 import HeroBackground from './HeroBackground';
 import Typed from 'react-typed';
@@ -12,47 +12,41 @@ const HeroSection = () => {
       <HeroBackground />
       <div className="flex flex-col items-center">
         <div className="overflow-hidden rounded-full">
-          <Image src="/images/avatar/man.png" width={180} height={180} alt="avatar" />
+          <Image src="/images/avatar/Arushi_picture.jpeg" width={180} height={180} alt="avatar" />
         </div>
-        <h1 className="mt-4 text-3xl font-bold ">Mostafizur Rahman</h1>
+        <h1 className="mt-4 text-3xl font-bold ">Arushi Jain</h1>
         <div className="mt-2 flex gap-1">
           {' '}
           I'm a{' '}
           <Typed
-            strings={['Fullstack Developer', 'UI/UX Designer', 'Mobile App Developer']}
+            strings={['Fullstack Developer', 'ReactJS Developer', 'Javasacript Developer']}
             typeSpeed={60}
             backSpeed={30}
             loop
           />
         </div>
         <div className="mt-4  flex gap-5">
-          <Link href="https://www.instragram.com">
+          <Link legacyBehavior href="https://www.instragram.com">
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiInstagram size={25} />
             </a>
           </Link>
-          <Link href="https://www.twitter.com">
+          <Link legacyBehavior href="https://www.twitter.com">
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiTwitter size={25} />
             </a>
           </Link>
-          <Link href="https://www.facebook.com">
+          <Link legacyBehavior href="https://www.linkedin.com/in/arushijain016/">
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiFacebook size={25} />
+              <FiLinkedin size={25} />
             </a>
           </Link>
-          <Link href="https://www.dribble.com">
-            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-              <FiDribbble size={25} />
-            </a>
-          </Link>
-          <Link href="https://www.github.com">
+          <Link legacyBehavior href="https://github.com/Arushi-Jain">
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiGithub size={25} />
             </a>
           </Link>
         </div>
-        <Button className="mt-5 px-8">Hire Me</Button>
       </div>
 
       <div className="absolute bottom-0 flex flex-col items-center ">

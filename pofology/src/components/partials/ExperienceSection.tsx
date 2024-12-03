@@ -29,9 +29,9 @@ const ExperienceSection = () => {
                   <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
                     {experience.company}
                   </p>
-                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200">
+                  {/* <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200">
                     {experience.description}
-                  </p>
+                  </p> */}
                 </li>
               ))}
             </ol>

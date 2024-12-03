@@ -14,13 +14,13 @@ type Props = {
 const Post = ({ thumbnailUrl, title, publishedAt, href }: Props) => {
   return (
     <div className={classNames(styles['post'], 'bg-white dark:bg-gray-700')}>
-      <Link href={href}>
+      <Link legacyBehavior href={href}>
         <a className={styles['post-image']}>
           <Image src={thumbnailUrl} height={384} width={512} layout="responsive" alt={title} />
         </a>
       </Link>
       <div className="p-6">
-        <Link href={href}>
+        <Link legacyBehavior href={href}>
           <a className="block text-xl font-semibold hover:text-primary-500 hover:underline">{title}</a>
         </Link>
         <time className="mt-2 inline-block text-gray-500">{publishedAt}</time>

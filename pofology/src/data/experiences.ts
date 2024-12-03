@@ -2,26 +2,30 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
-    jobTitle: 'Frontend Developer',
-    company: 'Google LLC',
+    jobTitle: 'Associate Software Engineer (MEVN Full stack)',
+    company: 'Newgen Softwares',
     startDate: 'Jan 2017',
     endDate: 'Dec 2018',
-    description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
   },
 
   {
-    jobTitle: 'Fullstack Developer',
-    company: 'Amazon Inc.',
-    startDate: 'Jan 2019',
-    endDate: 'Dec 2021',
-    description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
+    jobTitle: 'Full Stack Engineer',
+    company: 'TeamLease Services Limited',
+    startDate: 'Apr 2020',
+    endDate: 'Oct 2020',
   },
 
   {
-    jobTitle: 'Senior Fullstack Developer',
-    company: 'Facebook Inc.',
-    startDate: 'Jan 2022',
+    jobTitle: 'Software Engineer',
+    company: 'Dunzo (Recrosoft)',
+    startDate: 'Apr 2020',
+    endDate: 'Oct 2020',
+  },
+
+  {
+    jobTitle: 'Senior Software Developer',
+    company: 'Knolskape Solutions',
+    startDate: 'Oct 2020',
     endDate: 'Present',
-    description: 'Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.',
   },
 ];

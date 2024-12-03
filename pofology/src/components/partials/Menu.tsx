@@ -14,15 +14,15 @@ const Menu = () => {
   return (
     <header className="header text-gray-700 dark:text-gray-200">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4 md:px-6">
-        <Link href="/">
-          <a className="text-3xl  font-bold">
-            <span>Pofology</span>
-            <span className="text-primary-500">.</span>
-          </a>
-        </Link>
+        {/* <Link legacyBehavior href="/">
+          <a className="text-3xl  font-bold"> */}
+        {/* <span>Pofology</span> */}
+        {/* <span className="text-primary-500">.</span> */}
+        {/* </a>
+        </Link> */}
         <ul className="ml-auto hidden items-center md:flex">
           <li>
-            <Link href="/works">
+            <Link legacyBehavior href="/works">
               <a
                 className={classNames(
                   'inline-block px-4 font-semibold  transition-colors duration-300 hover:text-primary-600 hover:underline',
@@ -36,7 +36,7 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link href="/blog">
+            <Link legacyBehavior href="/blog">
               <a
                 className={classNames(
                   'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
@@ -50,7 +50,7 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link legacyBehavior href="/contact">
               <a
                 className={classNames(
                   'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
@@ -125,15 +125,15 @@ const Menu = () => {
               </Transition.Child>
               <div className="flex h-full flex-col overflow-y-auto">
                 <div className="border-b px-2 pb-4 dark:border-gray-700">
-                  <Link href="/">
-                    <a className="text-3xl  font-bold">
-                      <span>Pofology</span>
-                      <span className="text-primary-500">.</span>
-                    </a>
-                  </Link>
+                  {/* <Link legacyBehavior href="/">
+                    <a className="text-3xl  font-bold"> */}
+                  {/* <span>Pofology</span>
+                      <span className="text-primary-500">.</span> */}
+                  {/* </a>
+                  </Link> */}
                 </div>
                 <nav className="mt-4 space-y-1 px-2">
-                  <Link href="/works">
+                  <Link legacyBehavior href="/works">
                     <a
                       className={classNames(
                         'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600',
@@ -143,7 +143,7 @@ const Menu = () => {
                       Works
                     </a>
                   </Link>
-                  <Link href="/blog">
+                  <Link legacyBehavior href="/blog">
                     <a
                       className={classNames(
                         { 'text-primary-500': router.asPath == '/blog' },
@@ -153,7 +153,7 @@ const Menu = () => {
                       Blog
                     </a>
                   </Link>
-                  <Link href="/contact">
+                  <Link legacyBehavior href="/contact">
                     <a
                       className={classNames(
                         { 'text-primary-500': router.asPath == '/contact' },

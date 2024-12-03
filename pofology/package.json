@@ -4,14 +4,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^1.7.2",
-    "axios": "^0.27.2",
+    "axios": "^1.7.8",
     "classnames": "^2.3.2",
-    "next": "12.3.1",
+    "next": "^15.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",

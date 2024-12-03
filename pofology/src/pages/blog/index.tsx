@@ -1,5 +1,5 @@
 import PageTitle from '@/components/shared/PageTitle';
-import Pagination from '@/components/shared/Pagination';
+// import Pagination from '@/components/shared/Pagination';
 import Post from '@/components/shared/Post';
 import { posts } from '@/data/posts';
 import AppLayout from '@/layouts/AppLayout';
@@ -27,9 +27,9 @@ const Blog = () => {
             />
           ))}
         </div>
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <Pagination />
-        </div>
+        </div> */}
       </div>
     </AppLayout>
   );

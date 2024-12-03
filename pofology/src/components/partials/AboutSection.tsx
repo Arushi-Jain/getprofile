@@ -3,7 +3,8 @@ import SectionTitle from '@/components/shared/SectionTitle';
 import { FiCoffee } from 'react-icons/fi';
 import { HiOutlineChartBar, HiOutlineFire, HiOutlineUsers } from 'react-icons/hi';
 import ProgressBar from '@/components/shared/ProgressBar';
-
+import Link from 'next/link';
+// href = "https://drive.google.com/file/d/1a6YTn7Vvz0o2AmhboAij0ZPv8zQbPg1N/view?usp=sharing"
 const AboutSection = () => {
   return (
     <>
@@ -13,8 +14,8 @@ const AboutSection = () => {
         {/* Bio */}
         <div className="">
           <p className="text-justify">
-            Hi, I am Md Mostafizur Rahman, I am a fullstack developer. I work from Dhaka, Bangladesh. I have rich
-            experience in building, designing & customizing website, web apps, mobile apps etc.
+            Hi, I am Arushi Jain, I am a fullstack developer. I work remotely from Mumbai, India. I have rich
+            experience in building, designing & customizing website, web apps etc.
           </p>
           <Button className="mt-5">Download CV</Button>
         </div>
@@ -38,14 +39,14 @@ const AboutSection = () => {
 
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Mobile App</h6>
+              <h6 className="font-semibold">NestJS / Express JS</h6>
               <p>75%</p>
             </div>
             <ProgressBar color="rose" progress={75} />
           </div>
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">UI/UX</h6>
+              <h6 className="font-semibold">Next/ React JS</h6>
               <p>90%</p>
             </div>
             <ProgressBar color="green" progress={80} />
@@ -54,7 +55,7 @@ const AboutSection = () => {
       </div>
 
       {/* Overview */}
-      <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+      {/* <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
         <div className="flex">
           <div className="mr-5 text-gray-300">
             <HiOutlineFire size={50} />
@@ -89,11 +90,11 @@ const AboutSection = () => {
             <HiOutlineChartBar size={50} />
           </div>
           <div>
-            <h2 className="text-3xl font-bold">5+</h2>
+            <h2 className="text-3xl font-bold">7+</h2>
             <p className="mt-1">Years of experience</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import React from 'react';
 import Head from 'next/head';
 import Menu from '@/components/partials/Menu';
@@ -11,12 +12,20 @@ interface Props {
 }
 
 const AppLayout: React.FC<Props> = ({ children, title }) => {
-  const appName = process.env.NEXT_PUBLIC_APP_NAME || 'Pofology';
+  const appName = process.env.NEXT_PUBLIC_APP_NAME || 'Software engineer';
   const pageTitle = title ? `${title} - ${appName}` : appName;
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
+        {/* <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> */}
+        {/* <script type="text/javascript">
+          (function(){
+            emailjs.init({
+              publicKey: 'KG1ORxNK8i8t_1Svt',
+            })
+          })()
+        </script> */}
       </Head>
       <div className="flex min-h-screen flex-col">
         <ScrollToTop
